@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- divider: listview每个item与相邻的item的间隔  (可以用颜色填充或者用图片背景) 我这里用的是系统自带的颜色 红色 -->
+    <!-- dividerHeight: listview每个item与相邻的item的间隔（divider）的高度 一般给个1dp就差不多了 -->
+
+    <com.hanxulou.listviewpullrefresh.PullRefreshListView 
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/holo_red_light"
+        android:dividerHeight="2dp" >
+    </com.hanxulou.listviewpullrefresh.PullRefreshListView>
+
+</LinearLayout>

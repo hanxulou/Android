@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- listview中每个item的布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <!-- android:gravity="": 设置自己内容的对齐方式 即自己包含的内容的位置 -->
+        <!-- 此处的linearlayout布局中的内容有一个imageview一个linearlayout和一个button -->
+
+
+        <!-- android:layout_gravity="": 设置自己在父布局中的对齐方式 即自己所在的位置 -->
+        <!-- 如：想在父布局的右边显示==android:layout_gravity="right" -->
+
+
+        <!-- 总的来说就是android:layout_gravity=""是设置自己，android:gravity=""是设置自己的内容（即子布局） -->
+
+        <ImageView
+            android:id="@+id/logoIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/mask" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hanxulou"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="bottom"
+                android:text="2014年8月20日  12：21"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/corners"
+            android:text="购买"
+            android:textSize="16sp" />
+<!-- android:background="@drawable/corners": 调用了drawable文件夹下的corners.xml使按钮具有圆角效果 -->
+    </LinearLayout>
+
+</LinearLayout>
