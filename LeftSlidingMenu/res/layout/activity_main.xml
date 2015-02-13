@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hanxulou="http://schemas.android.com/apk/res/com.hanxulou.leftslidingmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- xmlns:hanxulou="http://schemas.android.com/apk/res/com.hanxulou.leftslidingmenu" -->
+    <!-- 自定义命名，最后的部分为应用的包名  应用包名 -->
+
+
+    <!-- 然后就可以使用他了 hanxulou:rightPadding="100dp" 在LeftSlidingMenu中无效 因为没有使用它 -->
+    <!-- 这里在com.hanxulou.leftslidingmenu.view包下的不同menu，效果不同，可以更改不同的menu查看效果 -->
+
+    <com.hanxulou.leftslidingmenu.view.LeftSlidingMenu_QQ
+        android:id="@+id/leftSlidingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_frame_background"
+        android:scrollbars="none"
+        hanxulou:rightPadding="100dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/left_menu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/qq"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="switchMenu"
+                    android:text="切换菜单" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.hanxulou.leftslidingmenu.view.LeftSlidingMenu_QQ>
+
+</RelativeLayout>

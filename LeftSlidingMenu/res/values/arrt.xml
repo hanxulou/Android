@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- format="dimension"  支持dp sp等值而不是只是简单的int值 -->
+    <attr name="rightPadding" format="dimension"></attr>
+
+    <declare-styleable name="LeftSlidingMenu">
+        <attr name="rightPadding"></attr>
+    </declare-styleable>
+
+</resources>
